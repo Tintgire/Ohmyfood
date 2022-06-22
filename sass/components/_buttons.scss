@@ -27,9 +27,12 @@
     );
     position: relative;
     z-index: 1;
-    transition: opacity 4000ms;
     transition: 5000ms;
     &:hover {
+      transform: scale(1.1);
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      filter: brightness(1.2);
       &::after {
         opacity: 1;
         border-radius: 50px 0;
@@ -53,7 +56,6 @@
       left: 0;
       opacity: 0;
       z-index: -1;
-      transition: opacity 4000ms;
       transition: 5000ms;
       border-radius: 50px;
       background: linear-gradient(
