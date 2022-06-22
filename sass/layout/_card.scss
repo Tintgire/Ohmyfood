@@ -1,0 +1,240 @@
+.article__restaurant {
+  .card:nth-child(1) {
+    animation: fadeInImg 1500ms both 4000ms;
+  }
+  .card:nth-child(2) {
+    animation: fadeInImg 1500ms both 5000ms;
+  }
+  .card:nth-child(3) {
+    animation: fadeInImg 1500ms both 6000ms;
+  }
+  .card:nth-child(4) {
+    animation: fadeInImg 1500ms both 7000ms;
+  }
+}
+
+.article__restaurant {
+  @include flex-center-column;
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 15px;
+  }
+  .card {
+    height: 250px;
+    width: 90%;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    z-index: 0;
+    position: relative;
+    @include box-shadow;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    @media (min-width: $breakpoint-tablet) {
+      width: 340px;
+      height: 700px;
+      &:hover {
+        box-shadow: 0px 0px 150px #000000;
+        transition: all 200ms ease-in;
+        transform: scale(1.2);
+        z-index: 1;
+      }
+    }
+
+    &__img {
+      height: 70%;
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      @media (min-width: $breakpoint-tablet) {
+        height: 80%;
+      }
+      &__img {
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .card__body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 18px;
+      @media (min-width: $breakpoint-tablet) {
+        margin: 0 15px 0 15px;
+        height: 20%;
+      }
+      &__top {
+        @include font-size;
+      }
+      &__bottom {
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 200;
+      }
+    }
+    .logo {
+      font-size: 25px;
+    }
+  }
+  .new {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-image: linear-gradient(
+      to right,
+      #56ab2f 0%,
+      #a8e063 51%,
+      #56ab2f 100%
+    );
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: "Shrikhand";
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    transition: 0.5s;
+    background-size: 200% auto;
+    letter-spacing: 1px;
+    @media (min-width: $breakpoint-tablet) {
+      animation: nouveau 4s infinite;
+    }
+
+    &:hover {
+      box-shadow: 0 0 20px #eee;
+      @media (min-width: $breakpoint-tablet) {
+        background-position: right center;
+        color: white;
+        animation: nouveau paused;
+      }
+    }
+  }
+}
+
+.card-logo {
+  position: relative;
+  .logo-hover {
+    &:hover {
+      opacity: 1;
+      @media (min-width: $breakpoint-tablet) {
+        transform: scale(1.7);
+      }
+    }
+  }
+  .logo {
+    padding: 1px;
+    position: absolute;
+    z-index: -1;
+  }
+  .logo-hover {
+    padding: 1px;
+    font-size: 25px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    @media (min-width: $breakpoint-tablet) {
+      transition: transform 3000ms ease-in;
+    }
+  }
+  .logo-color {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to bottom right, #ff7ad9, #9256dc);
+    -webkit-background-clip: text;
+    &__after {
+      color: #000000;
+      @media (min-width: $breakpoint-tablet) {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(to bottom right, #ff7ad9, #9256dc);
+        -webkit-background-clip: text;
+      }
+    }
+  }
+}
+
+.card {
+  @include box-shadow-menu;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  min-width: 300px;
+  @media (min-width: $breakpoint-tablet) {
+    width: 25%;
+  }
+  &__body {
+    display: flex;
+    &__left {
+      margin: auto;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 8px;
+      width: 100%;
+      overflow: hidden;
+    }
+    &__right {
+      display: flex;
+      align-items: flex-end;
+      margin-right: 15px;
+    }
+    &__price {
+      padding-bottom: 9px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    &__animation {
+      background: $clrTertiary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0;
+    }
+    &:hover {
+      .card__body__animation {
+        width: 20%;
+        transition: 2s;
+      }
+      .card-body-logo {
+        transform: rotate(360deg);
+        transition: 2s;
+      }
+    }
+  }
+  .card-body-logo {
+    color: $clrWhite;
+  }
+  .dish-title-primary {
+    font-size: 15px;
+    @include font-size;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .dish-title-secondary {
+    font-size: 12px;
+    margin-top: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.flex-box-card {
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}

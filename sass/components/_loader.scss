@@ -1,0 +1,113 @@
+/* .container-spinner {
+  opacity: 0;
+  animation: loading 3.5s;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to top left,
+    rgba(156, 7, 248, 0.459) 35%,
+    rgba(248, 0, 198, 0.469) 75%
+  );
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  .txt-loader {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    animation: shrink-txt 1s infinite;
+    font-family: $fontTitles;
+  }
+}
+
+.spinner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 50px;
+  &__clrPrimary {
+    border: 9px solid $clrPrimary;
+    animation: spinner 1.4s infinite linear alternate,
+      spinner-double 2.8s infinite linear;
+    animation: bounce 1s infinite;
+  }
+  &__background {
+    opacity: 0.7;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      135deg,
+      #feed07 0%,
+      #fe6a50 5%,
+      #ed00aa 15%,
+      #2fe3fe 50%,
+      #8900ff 100%
+    );
+  }
+}
+
+.circle {
+  background: rgba(rgba(55, 3, 160, 0.818), 30%);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+  top: 50px;
+}
+
+.shadow {
+  background-color: rgba(8, 8, 8, 0.05);
+  height: 35px;
+  width: 140px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 750px;
+  animation: shrink 1s infinite;
+} */
+
+.lol {
+  animation: loading-after 4s;
+}
+
+.container-spinner {
+  opacity: 0;
+  animation: loading 3.5s;
+  pointer-events: none;
+  background-image: white;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.spinner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  border: 9px solid $clrPrimary;
+  animation: spinner 1.4s infinite linear alternate,
+    spinner-double 2.8s infinite linear;
+}
+
+.txt-loader {
+  font-size: 25px;
+  background: -webkit-linear-gradient(hsl(267, 66%, 60%), hsl(317, 100%, 74%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 250px;
+  font-family: $fontTitles;
+}

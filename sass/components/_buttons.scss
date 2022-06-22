@@ -1,0 +1,65 @@
+.container-discover {
+  @include flex-center-column;
+  text-align: center;
+  margin: 20px 0;
+  &__title {
+    font-size: 25px;
+    padding: 0 12%;
+  }
+  &__paragraph {
+    color: #4d4d4d;
+    font-size: 20px;
+  }
+  .btn {
+    padding: 1em;
+    max-width: 370px;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    @include box-shadow;
+    margin-top: 20px;
+    text-decoration: none;
+    background: linear-gradient(
+      to bottom right,
+      lighten($clrSecondary, 0) 10%,
+      darken($clrPrimary, 0) 90%
+    );
+    position: relative;
+    z-index: 1;
+    transition: opacity 4000ms;
+    transition: 5000ms;
+    &:hover {
+      &::after {
+        opacity: 1;
+        border-radius: 50px 0;
+      }
+      &.btn {
+        border-radius: 50px 0;
+      }
+    }
+    &__sizeOne {
+      width: $width-one;
+    }
+    &__sizeTwo {
+      width: $width-two;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 4000ms;
+      transition: 5000ms;
+      border-radius: 50px;
+      background: linear-gradient(
+        to bottom right,
+        lighten($clrPrimary, 5) 20%,
+        darken($clrSecondary, 10) 80%
+      );
+    }
+  }
+}

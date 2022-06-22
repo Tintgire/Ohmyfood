@@ -1,0 +1,83 @@
+.container-location {
+  .location {
+    @include flex-content-center;
+    background: $clrLocationBackground;
+    margin-top: 4px;
+    padding: 2% 0;
+    @media (min-width: $breakpoint-desktop) {
+      padding: 1% 0;
+    }
+    &__icon {
+      color: $clrLocation;
+      width: 30px;
+      margin-left: 55px;
+      @media (min-width: $breakpoint-tablet) {
+        margin-left: -2%;
+      }
+      @media (min-width: $breakpoint-desktop) {
+        margin-left: -4%;
+      }
+    }
+    &__name {
+      border: none;
+      background: $clrLocationBackground;
+    }
+    ::placeholder {
+      color: $clrLocation;
+      @include font-size;
+      font-family: $fontTxt;
+    }
+  }
+}
+
+.container {
+  margin-top: 1px;
+  height: 300px;
+  @media (min-width: $breakpoint-tablet) {
+    height: 375px;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    height: 650px;
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 270px;
+    @media (min-width: $breakpoint-tablet) {
+      height: 325px;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      height: 560px;
+    }
+  }
+  &__inimg {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: -50px;
+    background-color: white;
+    padding: 10px 40px 0 20px;
+  }
+  .titlefirst {
+    font-family: $fontTitles;
+    font-weight: 200;
+    font-size: 25px;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 35px;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 50px;
+    }
+  }
+  .logo {
+    font-size: 25px;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 35px;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 50px;
+    }
+  }
+}

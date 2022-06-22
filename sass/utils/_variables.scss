@@ -1,0 +1,18 @@
+$clrPrimary: hsl(267, 66%, 60%);
+$clrSecondary: hsl(317, 100%, 74%);
+$clrTertiary: #99e2d0;
+$clrLocationBackground: #eaeaea;
+$clrLocation: #424242;
+$clrWhite: #ffffff;
+
+$width-one: 85%;
+$width-two: 60%;
+
+$gradient: linear-gradient(to bottom right, $clrSecondary 5%, $clrPrimary 95%);
+$gradientSecondary: linear-gradient($clrTertiary, $clrWhite);
+
+$fontTitles: "Shrikhand";
+$fontTxt: "Roboto";
+
+$breakpoint-desktop: 1440px;
+$breakpoint-tablet: 768px;

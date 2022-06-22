@@ -1,0 +1,36 @@
+.section {
+  font-family: $fontTxt;
+  margin: 0 20px;
+  &__title {
+    text-transform: uppercase;
+    border-bottom: 3px solid #99e2d0;
+    padding-bottom: 4px;
+    width: 50px;
+    margin-bottom: 15px;
+    @media (min-width: $breakpoint-tablet) {
+      border-image: linear-gradient(
+        to right,
+        rgb(153, 226, 208),
+        rgb(255, 255, 255) 130%
+      );
+      border-image-slice: 1;
+      width: 100px;
+    }
+  }
+  .flex-box-title-card {
+    display: flex;
+    @media (min-width: $breakpoint-tablet) {
+      justify-content: center;
+    }
+  }
+}
+
+.entrées {
+  animation: fadeInImg 1500ms forwards;
+}
+.plats {
+  animation: fadeInImg 1500ms both 1500ms;
+}
+.desserts {
+  animation: fadeInImg 1500ms both 3000ms;
+}

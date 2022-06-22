@@ -1,0 +1,56 @@
+footer {
+  background: #353535;
+  margin-top: 40px;
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 110px;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 8%;
+  }
+  .footer__body {
+    padding: 20px 20px 40px 20px;
+    font-size: 20px;
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .footer__logo {
+    margin-right: 10px;
+    color: white;
+    &__two {
+      font-size: 14px;
+    }
+  }
+  .ohmyfood {
+    color: white;
+    font-family: $fontTitles;
+    font-size: 22px;
+    margin-bottom: 20px;
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .footer__body__flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  p,
+  a {
+    color: white;
+    line-height: 30px;
+    font-size: 17px;
+    &:hover {
+      color: $clrPrimary;
+      cursor: pointer;
+    }
+  }
+  .footer_tablet {
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

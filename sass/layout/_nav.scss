@@ -1,0 +1,100 @@
+.title {
+  padding: 0 5%;
+  margin: 60px 0 30px 0;
+  font-size: 25px;
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nav {
+  padding: 0 5%;
+  &--ul {
+    padding-inline-start: 0%;
+    list-style-type: none;
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 0 25px;
+    }
+    &--li {
+      margin: 40px 0 40px 0;
+      padding: 20px;
+      width: 100%;
+      border-radius: 50px;
+      background: white;
+      @include box-shadow;
+      // box-shadow: 0px 3px 5px 0px rgba(147, 86, 220, 0.1);
+      @media (min-width: $breakpoint-tablet) {
+        width: 400px;
+      }
+      .link {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .nav--ul--li:hover {
+      box-shadow: 2px 4px 4px 1px rgb(128 128 128 / 50%);
+      @media (min-width: $breakpoint-tablet) {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      }
+      @media (min-width: $breakpoint-tablet) {
+        .text {
+          color: $clrPrimary;
+        }
+      }
+
+      .logo {
+        color: $clrPrimary;
+      }
+    }
+  }
+  .number {
+    @include flex-center-row;
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: $clrPrimary;
+    border-radius: 50px;
+    position: relative;
+    left: -32px;
+  }
+  .logo {
+    color: grey;
+    font-size: 25px;
+    margin: 0 8% 0 0;
+  }
+  .text {
+    @include font-size;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  ul li {
+    transform: translateY(15px);
+  }
+
+  ul:nth-child(1) li {
+    // animation: rebond 1.25s alternate infinite steps(2, end);
+    animation-name: vague;
+    animation-duration: 1.25s;
+    animation-direction: alternate;
+    animation-timing-function: steps(2, end);
+    animation-iteration-count: infinite;
+  }
+}
+
+.one {
+  animation-delay: 0s;
+}
+
+.two {
+  animation-delay: 0.2s;
+}
+
+.three {
+  animation-delay: 0.4s;
+}

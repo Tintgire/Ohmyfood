@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="././public/css/prefixed/style.css" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+
+    <title>Ohmyfood</title>
+  </head>
+  <body>
+    <!-- <div class="container-spinner">
+      <div class="spinner spinner__clrPrimary"></div>
+      <div class="spinner spinner__background">
+        <p class="txt-loader">Ohmyfood</p>
+      </div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+    </div> -->
+    <div class="container-spinner">
+      <div class="spinner"></div>
+      <p class="txt-loader">Ohmyfood</p>
+    </div>
+    <div class="lol">
+      <header>
+        <img src="./public/img/ohmyfood.png" alt="ohmyfood" class="ohmyfood" />
+      </header>
+
+      <section class="container-location">
+        <form class="location">
+          <i class="location__icon fas fa-map-marker-alt"></i>
+          <input
+            class="location__name"
+            type="text"
+            name="location"
+            placeholder="Paris, Belleville"
+          />
+        </form>
+        <div class="container-discover">
+          <h1 class="container-discover__title">
+            Réservez le menu qui vous convient
+          </h1>
+          <p class="container-discover__paragraph">
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
+          </p>
+          <a href="#restaurants" class="btn btn__sizeOne"
+            >Explorer nos restaurants</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <h2 class="title">Fonctionnement</h2>
+        <nav class="nav">
+          <ul class="nav--ul">
+            <li class="nav--ul--li one">
+              <a class="link" href="#restaurants"
+                ><span class="number">1</span
+                ><i class="logo fas fa-mobile-alt"></i>
+                <p class="text">Choisissez un restaurant</p></a
+              >
+            </li>
+            <li class="nav--ul--li two">
+              <a class="link" href="#restaurants"
+                ><span class="number">2</span
+                ><i class="logo fas fa-list-ul"></i>
+                <p class="text">Composez votre menu</p></a
+              >
+            </li>
+            <li class="nav--ul--li three">
+              <a class="link" href="#restaurants"
+                ><span class="number">3</span><i class="logo fas fa-store"></i>
+                <p class="text">Dégustez au restaurant</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <main>
+        <h3 class="title restaurants">Restaurants</h3>
+        <div class="article__restaurant">
+          <article class="card">
+            <a href="palette_goût.html">
+              <div class="card__img">
+                <img
+                  src="./public/img/La_palette_du_goût.jpg"
+                  alt="La palette du goût"
+                  class="card__img__img"
+                />
+              </div>
+              <div class="new">Nouveau</div>
+              <div class="card__body">
+                <div>
+                  <p class="card__body__top">La palette du goût</p>
+                  <p class="card__body__bottom">Ménilmontant</p>
+                </div>
+                <span class="card-logo">
+                  <i class="logo logo-color__after far fa-heart"></i>
+                  <i class="logo-hover logo-color fa-solid fa-heart"></i>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="la_note.html">
+              <div class="card__img">
+                <img
+                  src="./public/img/La_note_enchantée.jpg"
+                  alt="La note enchantée"
+                  class="card__img__img"
+                />
+              </div>
+              <div class="new">Nouveau</div>
+              <div class="card__body">
+                <div>
+                  <p class="card__body__top">La note enchantée</p>
+                  <p class="card__body__bottom">Charonne</p>
+                </div>
+                <span class="card-logo">
+                  <i class="logo logo-color__after far fa-heart"></i>
+                  <i class="logo-hover logo-color fa-solid fa-heart"></i>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="française.html">
+              <div class="card__img">
+                <img
+                  src="./public/img/À_la_française.jpg"
+                  alt="À la française"
+                  class="card__img__img"
+                />
+              </div>
+              <div class="card__body">
+                <div>
+                  <p class="card__body__top">À la française</p>
+                  <p class="card__body__bottom">Cité Rouge</p>
+                </div>
+                <span class="card-logo">
+                  <i class="logo logo-color__after far fa-heart"></i>
+                  <i class="logo-hover logo-color fa-solid fa-heart"></i>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="délice.html">
+              <div class="card__img">
+                <img
+                  src="./public/img/Le_délice_des_sens.jpg"
+                  alt="Le délice des sens"
+                  class="card__img__img"
+                />
+              </div>
+              <div class="card__body">
+                <div>
+                  <p class="card__body__top">Le délice des sens</p>
+                  <p class="card__body__bottom">Folie-Méricourt</p>
+                </div>
+                <span class="card-logo">
+                  <i class="logo logo-color__after far fa-heart"></i>
+                  <i class="logo-hover logo-color fa-solid fa-heart"></i>
+                </span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer__body">
+          <p class="ohmyfood">ohmyfood</p>
+          <div class="footer_tablet">
+            <div class="footer__body__flex">
+              <i class="footer__logo fas fa-utensils"></i>
+              <p>Proposer un restaurant</p>
+            </div>
+            <div class="footer__body__flex">
+              <i
+                class="footer__logo footer__logo__two fas fa-hands-helping"
+              ></i>
+              <p>Devenir partenaire</p>
+            </div>
+            <p>Mentions légales</p>
+            <a href="mailto:jesuisbg@chill.com">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

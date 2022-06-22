@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  @include box-shadow;
+  .ohmyfood {
+    color: #000;
+    width: 30%;
+    margin: auto;
+    justify-content: center;
+    max-width: 300px;
+    min-width: 120px;
+  }
+  .fa-arrow-left {
+    font-size: 22px;
+    color: #000;
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 30px;
+    }
+  }
+}
