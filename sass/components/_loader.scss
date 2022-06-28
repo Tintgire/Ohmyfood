@@ -1,4 +1,4 @@
-/* .container-spinner {
+.container-spinner {
   opacity: 0;
   animation: loading 3.5s;
   pointer-events: none;
@@ -73,13 +73,13 @@
   justify-content: center;
   top: 750px;
   animation: shrink 1s infinite;
-} */
+}
 
 .lol {
   animation: loading-after 4s;
 }
 
-.container-spinner {
+/* .container-spinner {
   opacity: 0;
   animation: loading 3.5s;
   pointer-events: none;
@@ -110,4 +110,4 @@
   position: absolute;
   top: 250px;
   font-family: $fontTitles;
-}
+} */
